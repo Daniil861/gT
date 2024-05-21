@@ -60,6 +60,9 @@
 
         window.onGPInit = function (gp) {
             gamePushInstance = gp;
+            console.log(`------------------> gp.ads.isStickyPlaying BEFORE - `, gp.ads.isStickyPlaying);
+            gp.ads.showSticky();
+            console.log(`------------------> gp.ads.isStickyPlaying BEFORE - `, gp.ads.isStickyPlaying);
 
             console.log('GamePush SDK инициализировано', gamePushInstance);
 
