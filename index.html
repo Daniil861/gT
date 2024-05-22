@@ -44,7 +44,7 @@
 
 <body>
     <h1>This is test page</h1>
-    
+
     <script type="text/javascript">
 
         var gamePushInstance = null;
@@ -54,6 +54,11 @@
             console.log(`------------------> gp.ads.isStickyPlaying BEFORE - `, gp.ads.isStickyPlaying);
             gp.ads.showSticky();
             console.log(`------------------> gp.ads.isStickyPlaying BEFORE - `, gp.ads.isStickyPlaying);
+            setTimeout(() => {
+                console.log(`------------------> Запускаю баннер через 5 секунд`);
+                gp.ads.showSticky();
+                console.log(`------------------> gp.ads.isStickyPlaying BEFORE - `, gp.ads.isStickyPlaying);
+            }, 5000);
 
             console.log('GamePush SDK инициализировано', gamePushInstance);
 
